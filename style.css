@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width and height */
+}
+
+body {
+    background: linear-gradient(to bottom, #e8a8e0, #d4a6d4); /* Lighter gradient background with soft purples */
+    font-family: 'Arial', sans-serif; /* Adding a nice font */
+    color: #fff;
+    text-align: center;
+}
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+ box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); /* Softer shadow for a lighter feel */
+    font-size: 8vmin;
+    color: #5e2787; /* Darker purple for text */
+    background-color: #f2d3e0; /* Very soft light purple background */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for effects */
+}
+.box:hover {
+    background-color: #f9e1e8; /* Lighter color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+#reset-btn,
+#New-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #8e44ad; /* Light purple for buttons */
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer; /* Change cursor to pointer for buttons */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+#reset-btn:hover,
+#New-btn:hover {
+    background-color: #732d91; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+#current-turn {
+    color: #ffffff; /* Light purple for the turn display */
+    font-size: 3vmin; /* Responsive font size */
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
+#msg {
+    color: #f4ecf7; /* Light purple for message */
+    font-size: 5vmin;
+    margin: 20px 0; /* Add some margin for better spacing */
+}
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide {
+    display: none;
+}
